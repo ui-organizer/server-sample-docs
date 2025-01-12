@@ -1,0 +1,41 @@
+{
+    "default": "content/overview",
+    "items": [
+        {
+            "caption": "Главная",
+            "reference": "home",
+            "items": [
+                {
+                    "caption": "Введение",
+                    "reference": "content/overview"
+                },
+                {
+                    "caption": "Начало работы",                    
+                    "reference": "content/get-started"                
+                },
+                {
+                    "caption": "Сервер",                    
+                    "reference": "content/server"                
+                }
+            ]
+        },
+        {
+            "caption": "API",
+            "reference": "reference"
+        },
+        {
+            "caption": "Демо",
+            "reference": "playground"
+        },
+        {
+            "caption": "Поддержка",            
+            "reference": "support",
+            "items": [
+                {
+                    "caption": "Доступные ресурсы",
+                    "reference": "content/support"
+                }
+            ]
+        }
+    ]
+}

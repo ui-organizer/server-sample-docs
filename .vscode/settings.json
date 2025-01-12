@@ -1,0 +1,19 @@
+{
+		"files.exclude": {
+			"**/*.d.ts": {
+				"when": "$(basename).ts"
+			},
+			"**/*.js": {
+				"when": "$(basename).ts"
+			},
+			"**/*.d.ts.map": true,
+			"**/*.js.map": true,
+			"**/*.njsproj": true,
+			"**/*.njsproj.user": true,
+			"bin": true,
+			"node_modules": true,
+			"obj": true,
+            "package-lock.json": true,
+            ".gitignore": true,
+		}
+}

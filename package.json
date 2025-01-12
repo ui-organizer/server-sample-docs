@@ -1,0 +1,25 @@
+{
+  "name": "server-sample-docs",
+  "version": "1.0.0",
+  "description": "Пример серверного приложения ui-organizer - Документирование",
+  "main": "app-server.js",
+  "scripts": {
+    "build": "npx webpack  --config src-client/webpack.config.js"
+  },
+  "author": "ahmoleg",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^5.7.2",
+    "ui-organizer": "^0.3.1",
+    "solution-utils": "^1.2.22",
+    "@fortawesome/fontawesome-free": "^6.7.1",
+    "highlight.js": "^11.10.0",
+    "webpack": "^5.96.1",
+    "webpack-cli": "^5.1.4",
+    "ts-loader": "^9.5.1",
+    "ui-organizer-webpack-plugin": "^0.0.3"
+  },
+  "dependencies": {
+    "ui-organizer-server": "^0.0.2"
+  }
+}

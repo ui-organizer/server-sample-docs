@@ -1,0 +1,24 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Компиляция ts",
+            "type": "typescript",
+            "tsconfig": "tsconfig.json",
+            "group": "build",
+            "problemMatcher": [
+                "$tsc"
+            ],
+        },
+        {
+            "label": "Упаковка webpack",
+            "type": "npm",
+            "script": "build", //from package.json
+            "group": "build",
+            "problemMatcher": [],
+            "dependsOn": [
+                "Компиляция ts"
+            ],
+        },
+    ]
+}

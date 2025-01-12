@@ -1,0 +1,25 @@
+body {
+    scrollbar-width: thin;
+}
+[name=str]{
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 1.6px 3.6px 0 rgba(0, 0, 0, .132), 0 0.3px 0.9px 0 rgba(0, 0, 0, .108);
+}
+.ui-list-item .ui-data-element{
+    border-bottom: solid 1px #ccc;
+}
+
+@media (max-width: 900px) {                  
+  [name=rightPanel] {
+     display: none;
+  }
+}
+
+[name=rightPanel] {
+    margin-left: 10px;
+}
+
+img {
+    border: solid 1px grey;
+}
