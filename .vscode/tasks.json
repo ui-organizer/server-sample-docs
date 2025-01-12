@@ -15,10 +15,7 @@
             "type": "npm",
             "script": "build", //from package.json
             "group": "build",
-            "problemMatcher": [],
-            "dependsOn": [
-                "Компиляция ts"
-            ],
+            "problemMatcher": []
         },
     ]
 }

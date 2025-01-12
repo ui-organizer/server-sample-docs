@@ -19,6 +19,7 @@ import { AppManager, Grouping, Flex, Input, Position, AlignSelf, UIForm, Content
  *      items - может быть или не быть.
  */
 const dataJsonFile: string = 'content/data.json';
+const formName: string = 'docsForm';
 
 namespace MyApp {
     export let figExpand: IFigAwesome = <IFigAwesome>{
@@ -271,7 +272,7 @@ namespace MyApp {
     }
 
     export class Form extends UIForm {
-        name: string = 'simpleForm';
+        name: string = formName;
         reference: string;
         constructor(command: string) {
             super();
@@ -411,44 +412,6 @@ namespace MyApp {
             };
         })
     }
-
-    // export async function userMarkdownInit() {
-    //     const markdownit = await import('markdown-it');
-    //     const hljs = (await import('highlight.js')).default;
-
-    //     let mdParser = markdownit({
-    //         html: true,
-    //         // linkify:true,
-    //         typographer: true,
-    //         highlight: function (code, lang) {
-    //             let result: string
-    //             try {
-    //                 const language = hljs.getLanguage(lang) ? lang : 'plaintext';
-    //                 result = hljs.highlight(code, { language: language }).value;
-    //             }
-    //             catch (e) {
-    //                 throw e;
-    //             }
-    //             finally {
-    //                 return result;
-    //             }
-    //         }
-    //     });
-
-    //     return mdParser;
-    // }
-
-    // export async function userMarkdownParse(markdownParser, md) {
-    //     if (!md) return '';
-    //     return markdownParser.render(md);
-    // }
-
-
-    // AppManager.setUserMarkdownParser(<AppManagerMarkdown>{
-    //     userMarkdownInit: userMarkdownInit,
-    //     userMarkdownParse: userMarkdownParse
-    // });
-
 }
 /*Инициализация приложения AppManager*/
 var Global: any = window;
@@ -468,5 +431,5 @@ AppManager
             console.log(Global.command);
             console.log(Global.commandArgs);
         }
-        AppManager.open('simpleForm', data);
+        AppManager.open(formName, data);
     })    

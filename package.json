@@ -4,6 +4,7 @@
   "description": "Пример серверного приложения ui-organizer - Документирование",
   "main": "app-server.js",
   "scripts": {
+    "prebuild" : "tsc",
     "build": "npx webpack  --config src-client/webpack.config.js"
   },
   "author": "ahmoleg",
